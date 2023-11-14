@@ -1,6 +1,20 @@
 # Time-Series-Analysis
 
-NOTES ON TIME SERIES ANALYSIS OF AMAZON DATA:
+### Comparative analysis of FAANG companies : ###
+- Netflix has the most variation of all these in the daily return price.
+
+- Next, I see if the stock price of these companies are correlated with each other.
+
+- There is maximum correlation between stock price of Amazon and Netflix, and Google and Facebook
+
+- Analysed the daily return of each stock for these companies.
+
+- Maximum correlation on daily return is between Amazon and Google, there is also some between google and facebook.
+
+- Maximum Growth (in the past 4 years) is of Apple and second place is held by Netflix.
+  
+- Daily return of any stock price is 0%, I check this by creating a histogram of daily return of stock prices.
+### TIME SERIES ANALYSIS OF AMAZON DATA: ###
 
 - Visualised and made density plots of stock prices, to see any visual trends
 - Observed moving variance and moving mean in the time series
@@ -28,3 +42,8 @@ NOTES ON TIME SERIES ANALYSIS OF AMAZON DATA:
 - Also performed training with SARIMA model 
 - Determined forecast with C.I. of 90 percent by training on all the data
 	- Predicted rolling origin forecast and 1 year of forecast in future with 90 % Confidence interval.
+
+ ### Stock price forecast using Prophet model ### 
+ " Prophet is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects. It works best with time series that have strong seasonal effects and several seasons of historical data."
+ 
+- I finally calculated Normalised Root-Mean-Squared (NRMSE) value for each model's prediction on the test dataset. Both Prophet and Auto-Arima models performed good in fitting for seasonality and trends in the data-set.
